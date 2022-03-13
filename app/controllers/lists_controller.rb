@@ -9,7 +9,8 @@ class ListsController < ApplicationController
     redirect_to '/top'
   end
 
-  def show
+  def index
+    @lists = List.all
   end
 
   private
